@@ -8,9 +8,10 @@
     <title>BolsaNova -</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/icono.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="shortcut icon" href="images/icono.jpg"/>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,7 +20,7 @@
     <![endif]-->
   </head>
   <body>
-  <nav class="navbar navbar-default navbar-green navbar-text-color">
+  <nav class="navbar navbar-default navbar-green navbar-text-color navborder">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -28,98 +29,98 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">BolsaNova</a>
+        <a id="bolsan" class="navbar-brand" href="index.html">BolsaNova</a>
       </div>
-      <div id="navbar" class="collapse navbar-collapse">
+     <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav ">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="que_es.html">Que es BolsaNova</a></li>
-          <li><a href="como_usar">Como usar BolsaNova</a></li>
-          <li><a href="productos">Nuestros Productos</a></li>
-          <li class="active"><a href="contacto.html">Contacto</a></li>
+          <li><a id="n_inicio" href="index.html">Inicio</a></li>
+          <li><a id="n_que" href="que_es.html">Que es BolsaNova</a></li>
+          <li><a id="n_como" href="como_usar.html">Como usar BolsaNova</a></li>
+          <li><a id="n_prod" href="productos.html">Nuestros Productos</a></li>
+          <li class="active"><a id="n_cont" href="contacto.html">Contacto</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </nav>
-  <form action="contacto.php" method="POST" role="form">
-    <fieldset class="cool-fieldset">
-      <div class="form-group">
-        <div class="col-md-6">
-            <p class="help-block margin-bottom-cero tx"><small>Nombre y Apellido: </small></p>
-            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre y Apellido" required="" />
-        </div>
-        <div class="col-md-6">
-            <p class="help-block margin-bottom-cero tx"><small>Email: </small></p>
-            <input type="text" class="form-control" name="email" id="email" placeholder="ejemplo@correo.com" required="" />
-        </div>
+  
+  <div class="container">
+    <div class="row text-center">
+      <h1 class="big_tx">Formulario de Contacto.</h1>
+      <div class="col-md-4 col-md-offset-4 text-left">
+        <form action="contacto.php" method="POST" role="form" class="form-vertical">    
+          <div class="form-group">
+            <div id="form_name" class="col-sm-12">
+                <p class="help-block margin-bottom-cero tx"><small>Nombre y Apellido: </small></p>
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre y Apellido" required="" />
+            </div>
+          </div>        
+          <div id="form_email" class="form-group">
+            <div class="col-sm-12">
+              <p class="help-block margin-bottom-cero tx"><small>Email: </small></p>
+              <input type="text" class="form-control" name="email" id="email" placeholder="ejemplo@correo.com" required="" />
+            </div>
+          </div>
+          <div id="form_mensaje" class="form-group space">
+            <div class="col-sm-12">
+              <p class="help-block margin-bottom-cero tx"><small>Mensaje: </small></p>
+              <textarea class="form-control space" rows="7" name="mensaje" id="mensaje" placeholder="Escriba su Mensaje" required=""></textarea>
+            </div>
+          </div>
+          <div class="form-group">          
+            <div class="col-sm-12">
+              <p class="spac"></p>
+              <input type="submit" id="submit" name="submit" value="Enviar" class="btn btn-primary form-control">
+            </div>
+          </div>    
+        </form>
       </div>
-      <div class="form-group space">
-        <div class="col-md-12">
-            <p class="help-block margin-bottom-cero tx"><small>Mensaje: </small></p>
-            <textarea class="form-control space" rows="4" name="mensaje" id="mensaje" placeholder="Escriba su Mensaje" required=""></textarea>
-        </div>
-      </div>
-      <div class="form-group">          
-        <div class="col-md-12">
-          <p class="spac"></p>
-          <input type="submit" id="submit" name="submit" value="Enviar" class="btn btn-primary form-control">
-        </div>
-      </div>
-    </fieldset>
-  </form>
+    </div>  
+  </div>
 
-  <!--<form action="contacto.php" method="post">
-    <label for="nombre">Nombre:</label>
-    <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required="" />
-    <label for="email">Email:</label>
-    <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required=""></textarea>
-    <input id="submit" type="submit" name="submit" value="Enviar" />
-  </form>-->
-  <div class=" ">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-1">
-          <img class="img-responsive center-block" src="images/facebook.png" height="40" width="40" alt="Facebook">
-        </div>
-        <div class="col-md-1">
-          <img class="img-responsive center-block" src="images/twitter.png" height="40" width="40" alt="Facebook">
-        </div>
-        <div class="col-md-8">
-          <p class="text-center tx">BolsaNova es una Marca Registrada por MacaGroup | Rosario | Argentina</p>
-        </div>  
-        <div class="col-md-2">
-          <p class="text-center tx">Ind. Argentina</p>
-        </div>
+  <div class="container">
+    <hr/>
+    <div class="row">
+      <div class="col-md-1">
+        <a id="fb" href="https://www.facebook.com/BolsaNova-926976390754185/?ref=ts&fref=ts" target="_blank"><img class="img-responsive center-block" src="images/facebook.png" height="40" width="40" alt="Facebook"></a>
       </div>
-      <hr/>
-      <div class="row">
-        <div class="col-md-2">
-          <p class="text-center tx">Inicio</p>
-        </div>
-        <div class="col-md-2">
-          <p class="text-center tx">Que es BolsaNova</p>
-        </div>
-        <div class="col-md-2">
-          <p class="text-center tx">Como usar BolsaNova</p>
-        </div>
-        <div class="col-md-2">
-          <p class="text-center tx">Nuestros Productos</p>
-        </div>
-        <div class="col-md-2">
-          <p class="text-center tx">Contacto</p>
-        </div>
-        <div class="col-md-2">
-          <p class="text-center tx">Comprar</p>
-        </div>
+      <div class="col-md-1">
+        <a id="tw" href="https://twitter.com/bolsanovaarg" target="_blank"><img class="img-responsive center-block" src="images/twitter.png" height="40" width="40" alt="Facebook"></a>
+      </div>
+      <div class="col-md-8">
+        <p id="marca" class="text-center tx textdeco">BolsaNova es una Marca Registrada por MacaGroup | Rosario | Argentina</p>
+      </div>  
+      <div class="col-md-2">
+        <p id="ind" class="text-center tx textdeco">Ind. Argentina</p>
       </div>
     </div>
   </div>
-  
+  <div class="container">
+    <hr/>
+    <div class="row">
+      <div class="col-md-2">
+        <a href="index.html"><p id="ini" class="text-center tx textdeco">Inicio</p></a>
+      </div>
+      <div class="col-md-2">
+        <a href="que_es.html"><p id="que" class="text-center tx textdeco">Que es BolsaNova</p></a>
+      </div>
+      <div class="col-md-2">
+        <a href="como_usar.html"><p id="como"class="text-center tx textdeco">Como usar BolsaNova</p></a>
+      </div>
+      <div class="col-md-2">
+        <a href="productos.html"><p id="prod"class="text-center tx textdeco">Nuestros Productos</p></a>
+      </div>
+      <div class="col-md-2">
+        <a href="contacto.html"><p id="cont" class="text-center tx textdeco">Contacto</p></a>
+      </div>
+      <div class="col-md-2">
+        <p id="comp" class="text-center tx textdeco">Comprar</p>
+      </div>
+    </div>
+  </div>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+   <script src="js/script.js"></script>
   </body>
 </html>

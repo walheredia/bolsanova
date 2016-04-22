@@ -8,7 +8,7 @@
 }*/
 
 .navbar-default {
-	background-color: #0B9547;
+	background-color: #0B9648;
 	border : none;
 	color: #FFFFFF;
 }
@@ -40,6 +40,13 @@
 	background-color: transparent;
 }
 
+.navborder {
+	border-radius: 9px 9px 9px 9px;
+	-moz-border-radius: 9px 9px 9px 9px;
+	-webkit-border-radius: 9px 9px 9px 9px;
+	border: 0px solid #000000;
+}
+
 body {
 	background-image: url(../images/bg.jpg);
 	background-position: center center;
@@ -64,6 +71,45 @@ hr {
 	text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
 }
 
+.txt {
+	height: 64px;
+	border-radius: 6px 6px 6px 6px;
+	-moz-border-radius: 6px 6px 6px 6px;
+	-webkit-border-radius: 6px 6px 6px 6px;
+	border: 0px solid #000000;
+	margin: .4em 0;
+}
+
+.marg {
+	margin: .4em 0;
+}
+
+.conc {
+	background-color: #0B9648;
+	height: 20px;
+	border-radius: 6px 6px 6px 6px;
+	-moz-border-radius: 6px 6px 6px 6px;
+	-webkit-border-radius: 6px 6px 6px 6px;
+	border: 0px solid #000000;
+	margin: .2em 0;	
+}
+
+.bol_1 {
+	background-color: #EB781E;	
+}
+
+.bol_2 {
+	background-color: #0B9648;	
+}
+
+.bol_3 {
+	background-color: #E32227;	
+}
+
+.bol_4 {
+	background-color: #1A9CD6;	
+}
+
 .wrap{
 	width:100%;
 	height:150px;
@@ -85,3 +131,22 @@ hr {
 	display: inline;
 }
 
+.delay1 {
+	-webkit-animation-delay: 1s;
+}
+
+.delay2 {
+	-webkit-animation-delay: 2s;
+}
+
+.delay3 {
+	-webkit-animation-delay: 1s;
+}
+
+.delay4 {
+	-webkit-animation-delay: 2s;
+}
+
+.txdeco {
+	text-decoration: none;
+}

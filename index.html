@@ -8,9 +8,10 @@
     <title>BolsaNova -</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/icono.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="shortcut icon" href="images/icono.jpg"/>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,7 +20,7 @@
     <![endif]-->
   </head>
   <body>
-  <nav class="navbar navbar-default navbar-green navbar-text-color">
+  <nav class="navbar navbar-default navbar-green navbar-text-color navborder">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -41,11 +42,12 @@
       </div><!--/.nav-collapse -->
     </div>
   </nav>
-
+  
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img class="img-responsive img-thumbnail center-block" src="images/logo.jpg" height="500" width="400" alt="">
+        <img id="logo" class="img-responsive img-thumbnail center-block" src="images/logo.jpg" height="500" width="377" alt="">
+        <p id="nuevo" class="text-center conc"><font color = "white">Un NUEVO concepto en BOLSAS</font></p>
       </div>
       <div class="col-md-6">
         <div id="contenedor">
@@ -77,49 +79,37 @@
     <br/>
     <div class="row">
       <div class="col-md-3">
-        <img class="img-responsive img-rounded center-block " src="images/carrito1.jpg" height="450" width="250" alt="">
+        <img id="carrito1" class="img-responsive img-rounded center-block" src="images/carrito1.jpg" height="450" width="250" alt="">
+        <p class="txt text-center bol_1"><font color = "white">1) Cuelgue las BolsaNova del carrito y haga su compra como siempre.</font></p>
       </div>
       <div class="col-md-3">
-        <img class="img-responsive img-rounded center-block" src="images/carr2.jpg" height="450" width="250" alt="">
+        <img id="carrito2" class="img-responsive img-rounded center-block" src="images/carr2.jpg" height="450" width="254" alt="">
+        <p class="txt text-center bol_2"><font color = "white">2) Coloque las compras sobre la caja y apoye las BolsaNova sobre el carrito vacío.</font></p>
       </div>
       <div class="col-md-3">
-        <img class="img-responsive img-rounded center-block" src="images/carrito3.jpg" height="450" width="250" alt="">
+        <img id="carrito3" class="img-responsive img-rounded center-block" src="images/carrito3.jpg" height="450" width="260" alt="">
+        <p class="txt text-center bol_3"><font color = "white">3) Despliegue las BolsaNova y dispondra de varias bolsas para guardar su compra.</font></p>
       </div>
       <div class="col-md-3">
-        <img class="img-responsive img-rounded center-block" src="images/carrito4.jpg" height="450" width="250" alt="">
+        <img id="carrito4" class="img-responsive img-rounded center-block" src="images/carrito4.jpg" height="450" width="253" alt="">
+        <p class="txt text-center bol_4"><font color = "white">4) Separe las BolsaNova despegando los abrojos y llévelas fácilmente desde el carrito a su auto.</font></p>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <p class="label-warning tx"><font color = "white">1) Cuelgue las BolsaNova del carrito y haga su compra como siempre.</font></p>
-      </div>
-      <div class="col-md-3">
-        <p class="label-success tx"><font color = "white">2) Coloque las compras sobre la caja y apoye las BolsaNova sobre el carrito vacío.</font></p>
-      </div>
-      <div class="col-md-3">
-        <p class="label-danger tx"><font color = "white">3) Despliegue las BolsaNova y dispondra de varias bolsas para guardar su compra.</font></p>
-      </div>
-      <div class="col-md-3">
-        <p class="label-primary tx"><font color = "white">4) Separe las BolsaNova despegando los abrojos y llévelas fácilmente desde el carrito a su auto</font></p>
-      </div>
-    </div>
-    <hr/>
-  </div>
+  </div>  
+
   <div class="container">
     <div class="row">
       <div class="col-md-1">
-        <img class="img-responsive center-block" src="images/facebook.png" height="40" width="40" alt="Facebook">
+        <a id="fb" href="https://www.facebook.com/BolsaNova-926976390754185/?ref=ts&fref=ts" target="_blank"><img class="img-responsive center-block" src="images/facebook.png" height="40" width="40" alt="Facebook"></a>
       </div>
       <div class="col-md-1">
-        <img class="img-responsive center-block" src="images/twitter.png" height="40" width="40" alt="Facebook">
+        <a id="tw" href="https://twitter.com/bolsanovaarg" target="_blank"><img class="img-responsive center-block" src="images/twitter.png" height="40" width="40" alt="Facebook"></a>
       </div>
       <div class="col-md-8">
-        <p class="text-center tx">BolsaNova es una Marca Registrada por MacaGroup | Rosario | Argentina</p>
+        <p id="marca" class="text-center tx txdeco">BolsaNova es una Marca Registrada por MacaGroup | Rosario | Argentina</p>
       </div>  
       <div class="col-md-2">
-        <p class="text-center tx">Ind. Argentina</p>
+        <p id="ind" class="text-center tx txdeco">Ind. Argentina</p>
       </div>
     </div>
   </div>
@@ -127,22 +117,22 @@
     <hr/>
     <div class="row">
       <div class="col-md-2">
-        <p class="text-center tx">Inicio</p>
+        <a href="index.html"><p id="ini" class="text-center tx txdeco">Inicio</p></a>
       </div>
       <div class="col-md-2">
-        <p class="text-center tx">Que es BolsaNova</p>
+        <a href="que_es.html"><p id="que" class="text-center tx txdeco">Que es BolsaNova</p></a>
       </div>
       <div class="col-md-2">
-        <p class="text-center tx">Como usar BolsaNova</p>
+        <a href="como_usar.html"><p id="como"class="text-center tx txdeco">Como usar BolsaNova</p></a>
       </div>
       <div class="col-md-2">
-        <p class="text-center tx">Nuestros Productos</p>
+        <a href="productos.html"><p id="prod"class="text-center tx txdeco">Nuestros Productos</p></a>
       </div>
       <div class="col-md-2">
-        <p class="text-center tx">Contacto</p>
+        <a href=""><p id="cont" class="text-center tx txdeco">Contacto</p></a>
       </div>
       <div class="col-md-2">
-        <p class="text-center tx">Comprar</p>
+        <a href="contacto.html"><p id="comp" class="text-center tx txdeco">Comprar</p></a>
       </div>
     </div>
   </div>
@@ -150,5 +140,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+   <script src="js/script.js"></script>
   </body>
 </html>

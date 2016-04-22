@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    if( location.href == "file:///D:/html_templates/bolsanova/index.html" || location.href == "http://bolsanova.com.ar" || location.href == "http://www.bolsanova.com.ar")
+    if( location.href == "file:///D:/html_templates/bolsanova/index.html" || location.href == "http://bolsanova.com.ar" || location.href == "http://www.bolsanova.com.ar/")
     {
         var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
         

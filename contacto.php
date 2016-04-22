@@ -2,7 +2,7 @@
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
 $mensaje = $_POST['mensaje'];
-$para = 'wal_dh@hotmail.com';
+$para = 'info@bolsanova.com.ar';
 $titulo = 'Nuevo Contacto - Web BolsaNova';
 $header = 'From: ' . $email;
 $msjCorreo = "Nombre: $nombre\n E-Mail: $email\n Mensaje:\n $mensaje";

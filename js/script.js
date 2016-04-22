@@ -74,6 +74,7 @@ $(document).ready(function() {
     animationHover('#form_name', 'pulse');
     animationHover('#form_email', 'pulse');
     animationHover('#form_mensaje', 'pulse');
+    animationHover('#como_b', 'pulse');
    
 
     function animationHover (element, animation){

@@ -8,9 +8,10 @@
     <title>BolsaNova -</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/icono.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="shortcut icon" href="images/icono.jpg"/>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,7 +20,7 @@
     <![endif]-->
   </head>
   <body>
-  <nav class="navbar navbar-default navbar-green navbar-text-color">
+  <nav class="navbar navbar-default navbar-green navbar-text-color navborder">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -28,33 +29,80 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">BolsaNova</a>
+        <a id="bolsan" class="navbar-brand" href="index.html">BolsaNova</a>
       </div>
-      <div id="navbar" class="collapse navbar-collapse">
+     <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav ">
-          <li><a href="index.html">Inicio</a></li>
-          <li class="active"><a href="que_es.html">Que es BolsaNova</a></li>
-          <li><a href="como_usar.html">Como usar BolsaNova</a></li>
-          <li><a href="productos.html">Nuestros Productos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a id="n_inicio" href="index.html">Inicio</a></li>
+          <li class="active"><a id="n_que" href="que_es.html">Que es BolsaNova</a></li>
+          <li><a id="n_como" href="como_usar.html">Como usar BolsaNova</a></li>
+          <li><a id="n_prod" href="productos.html">Nuestros Productos</a></li>
+          <li><a id="n_cont" href="contacto.html">Contacto</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </nav>
-
+  
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p class="label-warning tx"><font color = "white">Sección en construcción</font></p>
-      </div>
-    </div>
-    <hr/>
+    <div class="row text-center">
+      <h1 id="como_b" class="big_tx">¿Qué es BolsaNova?</h1>
+      <div class="col-md-9 col-md-offset-2 text-left">
+        <div class="col-sm-12 form-vertical">
+          <p class="text-justify bol_2 tx t"><font color = "white">BolsaNova es una marca perteneciente a MacaGroup, una joven empresa argentina que nació con el espíritu de desarrollar productos y acciones que se enmarquen bajo el concepto de RSE (Responsabilidad Social Empresaria).</font></p>
+          <p class="text-justify bol_2 tx t"><font color = "white">En coherencia con ello, BolsaNova privilegia la sustentabilidad, en virtud de qué sus productos están confeccionados en Argentina con materiales 100% reciclables, generando así que los impactos de nuestra compañía sean positivos para el ecosistema y la sociedad.</font></p>
+          <p class="text-justify bol_2 tx t"><font color = "white">BolsaNova se distingue por su diseño innovador conformado por un sistema vanguardista de bolsas de compra, fácil de usar, trasladar y guardar, que apunta a marcar una nueva tendencia a la hora de ir al Supermercado.</font></p>
+          <p class="text-justify bol_2 tx t"><font color = "white">BolsaNova ofrece la mejor solución al problema cotidiano de acarrear gran cantidad de bolsitas. Con su sistema de bolsas reutilizables y resistentes, permite guardar sus compras en apenas 2, 3 o 4 bolsas. BolsaNova le proporciona la posibilidad de trasladar sus compras de una manera sencilla, práctica y ordenada, y más aún, dispondrá de pocas bolsas para cargar desde el baúl de su vehículo hacia su hogar, ahorrandose los “idas y vueltas” que quizás le demandaba descargar toda la compra. Y en aquellos lugares donde los supermercados aún entregan bolsitas de polietileno, con BolsaNova además de contribuir al cuidado del medioambiente, evitará la molestia que ocasiona en sus manos cargar decenas de bolsitas, que incluso suelen romperse en el camino...</font></p>
+          <p class="bol_2 tx txt t"><font color = "white"><strong>BOLSANOVA, “Un NUEVO concepto en BOLSAS”.</strong></font></p>
+        </div>
+      </div>      
+    </div>  
   </div>
 
+  <div class="container">
+    <hr/>
+    <div class="row">
+      <div class="col-md-1">
+        <a id="fb" href="https://www.facebook.com/BolsaNova-926976390754185/?ref=ts&fref=ts" target="_blank"><img class="img-responsive center-block" src="images/facebook.png" height="40" width="40" alt="Facebook"></a>
+      </div>
+      <div class="col-md-1">
+        <a id="tw" href="https://twitter.com/bolsanovaarg" target="_blank"><img class="img-responsive center-block" src="images/twitter.png" height="40" width="40" alt="Facebook"></a>
+      </div>
+      <div class="col-md-8">
+        <p id="marca" class="text-center tx textdeco">BolsaNova es una Marca Registrada por MacaGroup | Rosario | Argentina</p>
+      </div>  
+      <div class="col-md-2">
+        <p id="ind" class="text-center tx textdeco">Ind. Argentina</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <hr/>
+    <div class="row">
+      <div class="col-md-2">
+        <a href="index.html"><p id="ini" class="text-center tx textdeco">Inicio</p></a>
+      </div>
+      <div class="col-md-2">
+        <a href="que_es.html"><p id="que" class="text-center tx textdeco">Que es BolsaNova</p></a>
+      </div>
+      <div class="col-md-2">
+        <a href="como_usar.html"><p id="como"class="text-center tx textdeco">Como usar BolsaNova</p></a>
+      </div>
+      <div class="col-md-2">
+        <a href="productos.html"><p id="prod"class="text-center tx textdeco">Nuestros Productos</p></a>
+      </div>
+      <div class="col-md-2">
+        <a href="contacto.html"><p id="cont" class="text-center tx textdeco">Contacto</p></a>
+      </div>
+      <div class="col-md-2">
+        <p id="comp" class="text-center tx textdeco">Comprar</p>
+      </div>
+    </div>
+  </div>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+   <script src="js/script.js"></script>
   </body>
 </html>

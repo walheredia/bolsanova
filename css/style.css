@@ -142,13 +142,12 @@ hr {
 	padding-bottom: 10px;
 }
 
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: auto;
-	background-color: transparent;
-	display: inline;
+.contenedor{
+    position:relative;
+}
+
+.principal{
+    padding-bottom:70px;
 }
 
 .delay1 {

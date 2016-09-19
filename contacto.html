@@ -10,7 +10,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/nimate.css"/>
     <link rel="shortcut icon" href="images/icono.png"/>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,24 +47,40 @@
     <div class="row text-center">
     </br></br></br></br>
       <h1 class="big_tx">Formulario de Contacto.</h1>
-      <div class="col-md-4 col-md-offset-4 text-left">
+      <div class="col-md-8 col-md-offset-2 text-left">
         <form action="contacto.php" method="POST" role="form" class="form-vertical">    
           <div class="form-group">
-            <div id="form_name" class="col-sm-12">
+            <div id="form_name" class="col-sm-6">
                 <p class="help-block margin-bottom-cero tx"><small>Nombre y Apellido: </small></p>
                 <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre y Apellido" required="" />
             </div>
-          </div>        
-          <div id="form_email" class="form-group">
-            <div class="col-sm-12">
+            <div class="col-sm-6">
               <p class="help-block margin-bottom-cero tx"><small>Email: </small></p>
               <input type="text" class="form-control" name="email" id="email" placeholder="ejemplo@correo.com" required="" />
             </div>
+          </div>        
+          <div id="form_email" class="form-group">
+            <div class="col-sm-6">
+              <p class="help-block margin-bottom-cero tx"><small>Provincia: </small></p>
+              <input type="text" class="form-control" name="provincia" id="provincia" placeholder="Provincia" required="" />
+            </div>
+            <div class="col-sm-6">
+              <p class="help-block margin-bottom-cero tx"><small>Localidad: </small></p>
+              <input type="text" class="form-control" name="localidad" id="localidad" placeholder="Localidad" required="" />
+            </div>
           </div>
           <div id="form_email" class="form-group">
-            <div class="col-sm-12">
+            <div class="col-sm-6">
               <p class="help-block margin-bottom-cero tx"><small>Teléfono: </small></p>
               <input type="text" class="form-control" name="tel" id="tel" placeholder="Teléfono" required="" />
+            </div>
+            <div class="col-sm-6">
+              <p class="help-block margin-bottom-cero tx"><small>Tipo Compra: </small></p>
+                <select class="form-control" name="tipo" required="" />
+                  <option value="" selected disabled>Por favor, seleccione</option>
+                  <option value="Mayorista">Mayorista</option>
+                  <option value="Minorista">Minorista</option>
+                </select>
             </div>
           </div>
           <div id="form_mensaje" class="form-group spac">
@@ -100,13 +116,10 @@
       <div class="col-md-1">
         <a id="tw" href="https://twitter.com/bolsanovaarg" target="_blank"><img class="img-responsive center-block" src="images/twitter.png" height="40" width="40" alt="Facebook"></a>
       </div>
-<<<<<<< HEAD
       <div class="col-md-6">
         <p id="marca" class="text-center tx textdeco">BolsaNova® es una Marca Registrada por MacaGroup | Rosario | Argentina</p>
-=======
       <div class="col-md-8">
         <p id="marca" class="text-center tx textdeco"><strong>BolsaNova es una Marca Registrada por MacaGroup | Rosario | Argentina</strong></p>
->>>>>>> origin/master
       </div>  
       <div class="col-md-2">
         <p id="ind" class="text-center tx textdeco">Ind. Argentina</p>
